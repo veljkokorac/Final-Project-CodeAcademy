@@ -78,7 +78,7 @@ public class AddToCartTest extends BaseTest {
            whatsNewPage.clickCartButton();
            whatsNewPage.clickRemoveButton();
            whatsNewPage.clickAcceptButton();
-           //VERIFIKACIJA:TOTALNA CENA + TAX
+           //VERIFIKACIJA:TOTALNA CENA + TAX.
            //USLED PONAVLJANJA TESTOVA GOMILA SE KORPA TE JE DODATA METODA ZA BRISANJE PROIZVODA IZ ISTE.  
     }
 }
