@@ -45,7 +45,7 @@ public class LoginLogOutTest extends BaseTest {
         loginPage.clickSignInButton();
         loginPage.login("",validPassword);
         loginPage.verifyEmptyUser(emptyErrorMessage);
-        }
+    }
 
  @Test
     public void verifyEmptyPasswordLogin(){
@@ -55,8 +55,6 @@ public class LoginLogOutTest extends BaseTest {
         loginPage.clickSignInButton();
         loginPage.login(validEmail,"");
         loginPage.verifyEmptyPassword(emptyPasswordMessage);
-
-
     }    
 
 @Test
@@ -69,6 +67,5 @@ public class LoginLogOutTest extends BaseTest {
         loginPage.dropDownButton();
         loginPage.clickSignOutButton();
         loginPage.verifySignOut();
-    
-}
+    }
 }

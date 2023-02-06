@@ -14,7 +14,7 @@ public class AddToCartTest extends BaseTest {
     String validEmail = "veljan.korac@gmail.com";
     String validPassword = "On0mat0peja";
 
-      @Test
+  @Test
     public void checkAddToCart() {
         HomePage homePage = new HomePage(driver);
         WhatsNewPage whatsNewPage = new WhatsNewPage(driver);
@@ -25,9 +25,9 @@ public class AddToCartTest extends BaseTest {
         whatsNewPage.clickColorButton();
         whatsNewPage.clickAddToCart();
         whatsNewPage.verifyTextFieldIsVisible();
-        
-    }     
-      @Test
+    }    
+
+  @Test
     public void verifyCheckOutPrice() {
         HomePage homePage = new HomePage(driver);
         WhatsNewPage whatsNewPage = new WhatsNewPage(driver);
@@ -46,11 +46,9 @@ public class AddToCartTest extends BaseTest {
         whatsNewPage.clickRemoveButton();
         whatsNewPage.clickAcceptButton();
         //DODATNI TASK/VERIFIKACIJA CENE NA CHECKOUT PAGE-U.
-
     }
 
-
-       @Test
+  @Test
     public void verifyTotalPriceIsShowedProperly() {
        HomePage homePage = new HomePage(driver);
        WhatsNewPage whatsNewPage = new WhatsNewPage(driver);
@@ -81,11 +79,6 @@ public class AddToCartTest extends BaseTest {
            whatsNewPage.clickRemoveButton();
            whatsNewPage.clickAcceptButton();
            //VERIFIKACIJA:TOTALNA CENA + TAX
-           //USLED PONAVLJANJA TESTOVA GOMILA SE KORPA TE JE DODATA METODA ZA BRISANJE PROIZVODA IZ ISTE.
-
-
-
-          
-     
+           //USLED PONAVLJANJA TESTOVA GOMILA SE KORPA TE JE DODATA METODA ZA BRISANJE PROIZVODA IZ ISTE.  
     }
 }
